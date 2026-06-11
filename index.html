@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Para o Amor da Minha Vida ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#1b1614;
+    color:#f4ede8;
+    overflow-x:hidden;
+}
+
+/* Hero */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1{
+    font-family:'Playfair Display',serif;
+    font-size:3rem;
+    font-weight:500;
+    letter-spacing:.5px;
+    margin-bottom:25px;
+}
+
+.subtitle{
+    color:#c8b9ac;
+    font-size:1rem;
+    line-height:1.8;
+    max-width:650px;
+    margin-bottom:60px;
+}
+
+.language-box{
+    font-family:'Playfair Display',serif;
+    font-size:2.5rem;
+    font-weight:400;
+    color:#d4a373;
+    min-height:90px;
+    transition:opacity .8s ease;
+}
+
+.scroll{
+    position:absolute;
+    bottom:40px;
+    color:#888;
+    animation:bounce 2s infinite;
+}
+
+@keyframes bounce{
+    50%{transform:translateY(10px);}
+}
+
+/* Galeria */
+
+.section{
+    padding:100px 20px;
+    max-width:1200px;
+    margin:auto;
+}
+
+.section-title{
+    font-family:'Playfair Display',serif;
+    text-align:center;
+    font-size:2.2rem;
+    margin-bottom:60px;
+    color:#d4a373;
+    font-weight:400;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:35px;
+}
+
+.photo{
+    background:#241d1a;
+    padding:14px;
+    border-radius:18px;
+    transition:.35s;
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+
+/* .photo:nth-child(even){
+    transform:rotate(2deg);
+} */
+
+.photo:hover{
+    transform:rotate(0deg) scale(1.04);
+}
+
+.photo img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+    border-radius:14px;
+}
+
+.photo p{
+    text-align:center;
+    padding:12px;
+    color:#b8c0cc;
+}
+
+/* Carta */
+
+.love-letter{
+    max-width:700px;
+    margin:auto;
+    background:#241d1a;
+    padding:50px;
+    border-radius:20px;
+}
+
+.love-letter p{
+    line-height:2;
+    color:#d6dce5;
+    font-size:1.1rem;
+}
+
+.signature{
+    text-align:center;
+    margin-top:40px;
+    font-size:1.8rem;
+    color:#d4a373;
+    font-family:'Playfair Display',serif;
+}
+
+/* Rodapé */
+
+footer{
+    text-align:center;
+    padding:80px 20px;
+    color:#7f8896;
+}
+
+#language{
+    transition: opacity .8s ease;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:2.5rem;
+}
+
+.language-box{
+    font-size:2rem;
+}
+
+.love-letter{
+    padding:30px;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<section class="hero">
+
+    <h1>Eu te amo</h1>
+
+    <p class="subtitle">
+        Existem milhares de formas de dizer "eu te amo".
+        Mas nenhuma delas parece suficiente quando penso em você.
+    </p>
+
+    <div class="language-box" id="language">
+        Eu te amo
+    </div>
+
+    <div class="scroll">
+        ↓ role para continuar ↓
+    </div>
+
+</section>
+
+<section class="section">
+
+    <h2 class="section-title">
+        Nossos momentos
+    </h2>
+
+    <div class="gallery">
+
+        <div class="photo">
+            <img src="foto1.jpg">
+            <p>Nosso sorriso favorito.</p>
+        </div>
+
+        <div class="photo">
+            <img src="foto2.jpg">
+            <p>Um momento inesquecível.</p>
+        </div>
+
+        <div class="photo">
+            <img src="foto3.jpg">
+            <p>Mais uma lembrança perfeita.</p>
+        </div>
+
+        <div class="photo">
+            <img src="foto4.jpg">
+            <p>Você torna tudo melhor.</p>
+        </div>
+
+        <div class="photo">
+            <img src="foto5.jpg">
+            <p>Meu lugar favorito.</p>
+        </div>
+
+        <div class="photo">
+            <img src="foto6.jpg">
+            <p>Ao seu lado sempre.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section">
+
+    <div class="love-letter">
+
+        <p>
+            Existem milhares de idiomas espalhados pelo mundo.
+            Milhares de formas diferentes de dizer a mesma coisa.
+            <br><br>
+
+            Mas, para mim, nenhuma delas consegue expressar exatamente
+            o quanto você é importante na minha vida.
+
+            <br><br>
+
+            Você transformou dias comuns em memórias especiais,
+            trouxe alegria para momentos difíceis e tornou minha vida
+            muito mais bonita simplesmente por existir.
+
+            <br><br>
+
+            Não importa quantas línguas existam,
+            quantas palavras sejam inventadas
+            ou quantos anos passem.
+
+            <br><br>
+
+            Eu sempre vou encontrar uma maneira de dizer:
+
+            <br><br>
+
+            Eu te amo. ❤️
+        </p>
+
+        <div class="signature">
+            Com todo meu amor, <br>
+            Pedro Gabriel
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+
+    Feito com amor ❤️
+
+</footer>
+
+<script>
+
+const languages = [
+
+"Eu te amo 🇧🇷",
+"I love you 🇺🇸",
+"Te amo 🇪🇸",
+"Je t'aime 🇫🇷",
+"Ti amo 🇮🇹",
+"Ich liebe dich 🇩🇪",
+"愛してる 🇯🇵",
+"我爱你 🇨🇳",
+"사랑해 🇰🇷",
+"Я тебя люблю 🇷🇺",
+"Σ' αγαπώ 🇬🇷",
+"Seni seviyorum 🇹🇷",
+"אני אוהב אותך 🇮🇱",
+"أحبك 🇸🇦",
+"Aku cinta kamu 🇮🇩",
+"Mahal kita 🇵🇭",
+"Rakastan sinua 🇫🇮",
+"Jag älskar dig 🇸🇪",
+
+"Jeg elsker dig 🇩🇰",       // Dinamarquês
+"Jeg elsker deg 🇳🇴",       // Norueguês
+"Kocham cię 🇵🇱",           // Polonês
+"Miluji tě 🇨🇿",            // Tcheco
+"Ľúbim ťa 🇸🇰",            // Eslovaco
+"Szeretlek 🇭🇺",           // Húngaro
+"Te iubesc 🇷🇴",           // Romeno
+"Volim te 🇭🇷",            // Croata
+"Volim te 🇷🇸",            // Sérvio
+"Volim te 🇧🇦",            // Bósnio
+"Обичам те 🇧🇬",          // Búlgaro
+"Мені тебе кохаю 🇺🇦",     // Ucraniano
+"Es mīlu tevi 🇱🇻",        // Letão
+"Aš tave myliu 🇱🇹",       // Lituano
+"Ma armastan sind 🇪🇪",    // Estoniano
+
+"Ik hou van jou 🇳🇱",      // Holandês
+"Ek is lief vir jou 🇿🇦",  // Africâner
+"Ngiyakuthanda 🇿🇦",       // Zulu
+"Ndinokuthanda 🇿🇦",       // Xhosa
+"Ke a go rata 🇧🇼",        // Tswana
+
+"Anh yêu em 🇻🇳",          // Vietnamita
+"ຂ້ອຍຮັກເຈົ້າ 🇱🇦",       // Laos
+"ຂ້ອຍຮັກເຈົ້າ 🇱🇦",       // Lao
+"မင်းကိုချစ်တယ် 🇲🇲",      // Birmanês
+"ខ្ញុំស្រលាញ់អ្នក 🇰🇭",   // Khmer
+"ฉันรักคุณ 🇹🇭",          // Tailandês
+"මම ඔයාට ආදරෙයි 🇱🇰",      // Cingalês
+
+"मैं तुमसे प्यार करता हूँ 🇮🇳", // Hindi
+"আমি তোমাকে ভালোবাসি 🇧🇩",   // Bengali
+"હું તને પ્રેમ કરું છું 🇮🇳",   // Gujarati
+"ನಾನು ನಿನ್ನ ಪ್ರೀತಿಸುತ್ತೇನೆ 🇮🇳", // Kannada
+"நான் உன்னை காதலிக்கிறேன் 🇮🇳", // Tamil
+"నేను నిన్ను ప్రేమిస్తున్నాను 🇮🇳", // Telugu
+"ഞാൻ നിന്നെ സ്നേഹിക്കുന്നു 🇮🇳", // Malayalam
+"ਮੈਂ ਤੈਨੂੰ ਪਿਆਰ ਕਰਦਾ ਹਾਂ 🇮🇳", // Punjabi
+
+"دوستت دارم 🇮🇷",         // Persa
+"زه تا سره مینه لرم 🇦🇫", // Pashto
+"سەننى سۆيىمەن 🇺🇿",      // Uigur
+
+"Nakupenda 🇹🇿",          // Suaíli
+"Ninakupenda 🇰🇪",        // Quênia (Suaíli)
+"Mo nifẹ rẹ 🇳🇬",         // Iorubá
+"Ana m asị gị 🇳🇬",       // Igbo
+"Ina son ka 🇳🇬",         // Hauçá
+
+"Aloha wau iā ʻoe 🇺🇸",   // Havaiano
+"Ndimakukonda 🇲🇼",       // Chichewa
+"Ndakukonda 🇿🇲",         // Bemba
+
+"Mi amas vin 🇪🇸",        // Esperanto
+"Kimi o ai shiteru 🇯🇵",  // Japonês romanizado
+"Wo ai ni 🇨🇳",           // Chinês romanizado
+
+"Te quiero 🌎",
+"Love you forever ❤️",
+"Para sempre nós ❤️"
+
+];
+
+let index = 0;
+
+setInterval(() => {
+
+    const el = document.getElementById("language");
+
+    el.style.opacity = 0;
+
+    setTimeout(() => {
+        index = (index + 1) % languages.length;
+        el.innerText = languages[index];
+        el.style.opacity = 1;
+    }, 400);
+
+}, 2000);
+
+</script>
+
+</body>
+</html>
