@@ -215,7 +215,7 @@ footer{
     border-radius:20px;
     cursor:pointer;
     position:relative;
-    overflow:hidden;
+    overflow:visible;
 }
 
 .translation-card .original,
@@ -226,19 +226,19 @@ footer{
 .translation-card .translated{
     opacity:0;
     max-height:0;
-    overflow:hidden;
+    overflow:visible;
     transform:translateY(10px);
 }
 
 .translation-card.active .original{
     opacity:0;
     max-height:0;
-    overflow:hidden;
+    overflow:visible;
 }
 
 .translation-card.active .translated{
     opacity:1;
-    max-height:500px;
+    max-height:none;
     transform:translateY(0);
 }
 
