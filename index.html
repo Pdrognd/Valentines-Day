@@ -206,6 +206,71 @@ footer{
     line-height:1.8;
 }
 
+.translation-card{
+    max-width: 650px;
+    margin: 50px auto;
+    padding: 40px;
+    line-height: 1.8;
+    background:#241d1a;
+    border-radius:20px;
+    cursor:pointer;
+    position:relative;
+    overflow:hidden;
+}
+
+.translation-card .original,
+.translation-card .translated{
+    transition:all .5s ease;
+}
+
+.translation-card .translated{
+    opacity:0;
+    max-height:0;
+    overflow:hidden;
+    transform:translateY(10px);
+}
+
+.translation-card.active .original{
+    opacity:0;
+    max-height:0;
+    overflow:hidden;
+}
+
+.translation-card.active .translated{
+    opacity:1;
+    max-height:500px;
+    transform:translateY(0);
+}
+
+.hint{
+    display:block;
+    margin-top:15px;
+    color:#d4a373;
+    font-size:.9rem;
+}
+
+.card-header{
+    color:#d4a373;
+    font-family:'Playfair Display',serif;
+    font-size:1.4rem;
+    margin-bottom:20px;
+}
+
+.translate-btn{
+    margin-top:25px;
+    background:none;
+    border:1px solid #d4a373;
+    color:#d4a373;
+    padding:12px 20px;
+    border-radius:30px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.translate-btn:hover{
+    transform:translateY(-2px);
+}
+
 @media(max-width:768px){
 
 .hero h1{
@@ -361,11 +426,93 @@ footer{
             Eu te amo. ❤️
         </p>
 
+        
         <div class="signature">
             Com todo meu amor, <br>
             Pedro Gabriel
         </div>
+        
+    </div>
+    
+    <div class="translation-card" onclick="toggleTranslation(this)">
+        <div class="card-header">
+            🇺🇸 English Version
+        </div>
+        <div class="original">
+            I'm going to try to be bilingue here.<br>
+            Then you ask me, "Why?".... And with all humility, I answer...<br>
+            Words in portuguese are not enough to express all my love<br>
+            Happiness and pride in having you as my gillfriend and future wife.<br>
+            And what's more, I'm truly very happy to have you in my life.<br>
+            And i never tire od saying this.. As I've already told you,<br>
+            Ever since you came you in my life, you made an absurd change to everything.<br>
+            You made my life better, and as we say, this time we spent a part only strengthened<br>
+            The feeling that I LOVE YOU, and you are everything good to me.<br><br>
+            I love you, My love ❤️<br>
+            Love of my life ❤️
+        </div>
 
+        <div class="translated">
+            Eu vou tentar ser bilíngue aqui.<br>
+            Aí você me pergunta, "Por quê?".... E com toda humildade, eu respondo...<br>
+            Palavras em português não são suficientes para expressar todo o meu amor<br>
+            Felicidade e orgulho em ter você como minha namorada e futura esposa.<br>
+            E digo mais, estou realmente muito feliz por ter você na minha vida.<br>
+            E eu nunca me canso de dizer isso.. Como já te disse,<br>
+            Desde que você entrou na minha vida, fez uma mudança absurda em tudo.<br>
+            Você tornou minha vida melhor, e como dizemos, esse tempo que passamos "longe" só fortaleceu<br>
+            O sentimento de que EU TE AMO, e você é tudo de bom para mim.<br><br>
+            Eu te amo, Meu amor ❤️<br>
+            Amor da minha vida ❤️
+        </div>
+
+        <button class="translate-btn">
+            Ver tradução ❤️
+        </button>
+    </div>
+
+    <div class="translation-card" onclick="toggleTranslation(this)">
+        <div class="card-header">
+            🇪🇸 Versión en Español
+        </div>
+
+        <div class="original">
+            Hola mi amor ❤️<br>
+            Queria escribir en español, um pequeño adelanto de nuestro nuevo comienzo.<br>
+            Solo para espresar lo bien que me sentó tenerte de vuelta en mi vida. <br>
+            Desde que empezamos a hablar de nuevo, los nervios, las mariposas en el estómago, los temblore...<br>
+            Tudo esto fue tan intenso, pero cuando finalmente te abracé,<br>
+            Cuando finalmente me di cuenta de que mi amor había regresado, eso  fue increíble, mí amor<br>
+            Me encantá eso momento y todavía lo amo hoy, por fin mi amor ha vuelto conmigo.<br>
+            Has sido muy especial para mí, hecho siempre has sido muy especial para mí,<br>
+            Eres mi princesa, mi amor, mi hermosa, mi querida.<br>
+            Básicamente, eso es lo que quería decirte, mi amor.<br>
+            Compartimos tantos momentos juntos, cada uno más especial que el anterior.<br>
+            Pero debo decirte que, en el momento en que te volví a ver en mis brazos y comprendí que mi amor había regresado a mí,<br>
+            Ese momento quedará para siempre grabado en mi mente y corazón.<br><br>
+            Te amo, mi vida ❤️
+        </div>
+
+        <div class="translated">
+            Oi meu amor ❤️<br>
+            Queria escrever em espanhol, uma pequena prévia do nosso novo começo.<br>
+            Só para expressar o quão bem me fez ter você de volta na minha vida. <br>
+            Desde que começamos a falar de novo, o nevorsismo, as borboletas no estômago, os tremores...<br>
+            Tudo isso foi tão intenso, mas quando finalmente te abracei,<br>
+            quando finalmente percebi que meu amor havia retornado, foi incrível, meu amor.<br>
+            Eu amei esse momento e ainda amo hoje, finalmente meu amor voltou para mim.<br>
+            Você tem sido muito especial para mim, sempre foi muito especial para mim,<br>
+            Você é minha princesa, meu amor, minha bela, minha querida.<br>
+            Basicamente, isso é o que eu queria te dizer, meu amor.<br>
+            Compartilhamos tantos momentos juntos, cada um mais especial que o anterior.<br>
+            Mas devo dizer que, no momento em que te vi de novo em meus braços e entendi que meu amor havia voltado para mim,<br>
+            Esse momento ficará para sempre gravado em minha mente e coração.<br><br>
+            Eu te amo, minha vida ❤️
+        </div>
+
+        <button class="translate-btn">
+            Ver tradução ❤️
+        </button>
     </div>
 
 </section>
@@ -477,6 +624,10 @@ setInterval(() => {
     }, 400);
 
 }, 2000);
+
+function toggleTranslation(card){
+    card.classList.toggle("active");
+}
 
 </script>
 
